@@ -1,0 +1,316 @@
+.page-hero {
+    height: 40vh;
+    min-height: 350px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+    h1 { text-align: left; margin: 0; }
+
+    .hero-content {
+        width: 100%;
+        text-align: center;
+
+        h1 { color: #ffffff; text-align: center; margin: 0; }
+        h2 { 
+            color: #ffffff;
+            font-size: 32px;
+        }
+    }
+
+    &.home-hero {
+        height: 65vh;
+        min-height: 550px;
+    }
+}
+
+.team-members {
+    padding: 40px 0;
+    position: relative;
+
+    .team-member { 
+        margin: 40px 0;
+        display: flex;
+
+        .image {
+            flex: 0 0 auto;
+            width: 40%;
+        }
+
+        .member-details {
+            flex: 0 0 auto;
+            width: 60%;
+            display: flex;
+            align-items: center;
+
+            h3 { margin: 0 0 15px 0; font-size: 25px; }
+            h4 { margin: 0; font-size: 19px; font-weight: 400; }
+
+            .team-btn {
+                font-weight: 900;
+                text-decoration: none;
+                text-transform: uppercase;
+                display: inline-block;
+                margin-top: 20px;
+                cursor: pointer;
+                color: $link;
+
+                &:hover { text-decoration: underline; }
+            }
+        }
+    }
+}
+
+.team-modal {
+    position: absolute;
+    right: -100%;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+    display: block; 
+    transition: all 0.5s ease;
+
+    &.active { 
+        right: 0;
+    }
+
+    .site-m {
+        background: #ffffff;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+        max-width: 920px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        padding: 60px 30px;
+        transition: all 0.5s;
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 45px;
+            cursor: pointer;
+            transition: opacity 0.4s;
+
+            &:hover { opacity: 0.6; }
+        }
+
+        .site-m-member {
+            display: none;
+    
+            &.active { display: block; }
+            h3 { margin: 0 0 15px 0; font-size: 25px; }
+            h4 { margin: 0; font-size: 19px; font-weight: 400; }
+
+            h4.sub-title { font-size: 21px; font-weight: 900; margin-bottom: 15px; }
+
+            ul { 
+                padding: 0 0 0 15px; 
+                
+                li { margin-bottom: 8px; }
+            }
+
+            .photo-facts { 
+                margin: 30px 0;
+                display: flex;
+        
+                .image {
+                    flex: 0 0 auto;
+                    width: 35%;
+                    padding-right: 40px;
+
+                    img { width: 100%; height: auto; }
+                }
+        
+                .member-details {
+                    flex: 0 0 auto;
+                    width: 65%;
+                }
+            }
+        }
+    } 
+}
+
+.services-intro {
+    padding: 80px 0;
+    background: $brown;
+    color: #ffffff;
+
+    p {
+        color: #ffffff;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1.5;
+        text-align: center;
+        padding: 0 40px;
+        margin: 0;
+    }
+}
+
+.services-overview {
+    padding: 80px 0;
+
+    h2 {
+        color: $brown;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .serv-item {
+        margin: 30px 0;
+        text-align: center;
+        padding: 0 40px;
+
+        h3 { font-weight: 400; text-align: center; font-size: 18px; line-height: 1.4; }
+    }
+
+    .btn-area {
+        text-align: center;
+        padding-top: 60px; 
+    }
+}
+
+.services-pricing {
+    padding: 80px 0;
+    background: $offwhite;
+
+    h2 { text-align: center; }
+    p { text-align: center; margin-bottom: 25px; }
+
+    h3 {
+        text-align: center;
+        font-size: 19px;
+    }
+
+    ul {
+        list-style: none;
+        columns: 2;
+        max-width: 650px;
+        margin: 35px auto;
+        padding: 0;
+
+        li {
+            padding-left: 45px;
+            position: relative;
+            margin-bottom: 15px;
+            line-height: 30px;
+            font-size: 18px;
+
+            &:before {
+                content: "";
+                width: 28px;
+                height: 28px;
+                background: url(../img/x-icon.png) no-repeat;
+                position: absolute;
+                top: 2px;
+                left: 0;
+            }
+        }
+    }
+}
+
+.contact-intro {
+    padding: 80px 0;
+}
+
+.contact-maintenance {
+    padding: 60px 0;
+    background: $offwhite;
+
+    .icon-text {
+        display: flex;
+        margin-bottom: 20px;
+
+        .icon {
+            flex: 0 0 auto;
+            width: 80px;
+        }
+
+        .content {
+            padding-top: 8px;
+
+            h3 {
+                margin: 0;
+            }
+
+            a {
+                font-weight: 900;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &:hover { text-decoration: underline; }
+            }
+        }
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 900;
+    }
+}
+
+.site-modals {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: none;
+
+    .overlay { width: 100%; height: 100%; background: rgba(255, 255, 255, 0.85); opacity: 0; transition: all 1.5s; 
+        &.active { opacity: 1; }
+    }
+
+    &.active { 
+        display: block; 
+    }
+
+    .site-m {
+        background: #ffffff;
+        position: absolute;
+        top: 2%;
+        right: -150%;
+        transform: translateX(50%);
+        width: 95%;
+        max-width: 750px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        padding: 60px 30px;
+        transition: right 0.8s ease;
+
+        &.active {
+            right: 50%; 
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 45px;
+            cursor: pointer;
+            transition: opacity 0.4s;
+
+            &:hover { opacity: 0.6; }
+        }
+        
+        .site-m-content {
+            padding: 0 60px;
+
+            h3 {
+                display: flex;
+                align-items: center;
+                margin: 0 0 20px 0;
+
+                img { height: 50px; width: auto; display: inline-block; margin-right: 15px;  }
+            }
+
+            p { font-weight: bold; }
+        }
+    } 
+}

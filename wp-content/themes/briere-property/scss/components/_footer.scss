@@ -1,0 +1,131 @@
+footer {
+    background: #252526;
+    padding: 80px 0 30px 0;
+    color: $brown;
+
+    p { color: $brown; line-height: 1.6; font-weight: 700; }
+    h4 { color: #ffffff; margin: 0 0 20px 0; font-size: 17px; font-weight: 900; }
+    a { color: $brown; font-weight: 700; text-decoration: none;
+        &:hover { text-decoration: underline; }
+    }
+
+    .copy-message {
+        padding-top: 40px;
+        font-size: 15px;
+    }
+
+    .social-icons {
+        a {
+            text-indent: -9999px;
+            display: inline-block;
+            height: 28px;
+            background-image: url(../img/social-sprite.png);
+            background-repeat: no-repeat;
+            margin: 0 6px;
+            transition: opacity 0.4s;
+
+            &:hover { opacity: 0.6; }
+
+            &.facebook { width: 15px; }
+            &.houzz { width: 19px; background-position: -41px 0; }
+            &.linkedin { width: 25px; background-position: -82px 0; }
+            &.instagram { width: 28px; background-position: -122px 0; }
+        }
+    }
+}
+
+.testimonial-section {
+    padding: 80px 0;
+    text-align: center;
+
+    h2 { color: $brown; }
+
+    .testimonial-container {
+        padding: 60px 0;
+        border-bottom: 2px solid $border-color;
+        position: relative;
+
+        .arrow {
+            width: 43px;
+            height: 43px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-image: url(../img/arrow-sprite.png);
+            background-repeat: no-repeat;
+            cursor: pointer;
+            transition: opacity 0.4s;
+
+            &:hover { opacity: 0.8; }
+
+            &.prev {
+                left: 0;
+            }
+
+            &.next {
+                right: 0;
+                background-position: 0 -43px;
+            }
+        }
+
+        .test-wrap {
+            padding: 0 150px;
+
+            .testimonial {
+                display: none;
+                font-size: 18px;
+                line-height: 1.5;
+
+                .test-author {
+                    margin-top: 20px;
+                    font-weight: 900;
+                    color: $brown;
+                    text-transform: uppercase;
+                }
+
+                &.active { display: block; }
+            }
+        }
+    }
+
+    .test-logos {
+        padding-top: 50px;
+
+        a { display: inline-block; margin: 0 30px; }
+    }
+}
+
+.quote-cta {
+    padding: 80px 0;
+    background: $brown;
+
+    h2 { color: #ffffff; margin-bottom: 25px; }
+
+    .quote-col 
+    {
+        text-align: center; 
+        p { color: #ffffff; font-size: 22px; font-weight: 700; line-height: 1.4; padding: 0 40px; }
+        .icon {  margin-bottom: 25px; }
+        .btn-area { padding-top: 25px;}
+    }
+
+    .quote-cols .col-md-4 { margin: 25px 0; }
+}
+
+.instagram-section {
+    padding: 80px 0;
+
+    h2 { 
+        color: $brown; 
+        margin-bottom: 45px; 
+        margin-top: 0;
+        
+        img {
+            position: relative;
+            top: -10px;
+            padding-left: 15px;
+        }
+    }
+
+    .btn { margin-top: 45px; }
+}
